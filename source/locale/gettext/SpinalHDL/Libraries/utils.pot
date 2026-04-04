@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-04 15:03+0000\n"
+"POT-Creation-Date: 2026-04-04 18:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,20 +30,20 @@ msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:16
 #: ../../SpinalHDL/Libraries/utils.rst:86
-#: ../../SpinalHDL/Libraries/utils.rst:233
+#: ../../SpinalHDL/Libraries/utils.rst:295
 msgid "Syntax"
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:17
 #: ../../SpinalHDL/Libraries/utils.rst:87
-#: ../../SpinalHDL/Libraries/utils.rst:234
+#: ../../SpinalHDL/Libraries/utils.rst:296
 msgid "Return"
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:18
 #: ../../SpinalHDL/Libraries/utils.rst:88
 #: ../../SpinalHDL/Libraries/utils.rst:206
-#: ../../SpinalHDL/Libraries/utils.rst:235
+#: ../../SpinalHDL/Libraries/utils.rst:297
 msgid "Description"
 msgstr ""
 
@@ -482,7 +482,7 @@ msgid "bufferDepth"
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:220
-#: ../../SpinalHDL/Libraries/utils.rst:237
+#: ../../SpinalHDL/Libraries/utils.rst:299
 msgid "Int"
 msgstr ""
 
@@ -495,10 +495,83 @@ msgid "There is also an ``ResetCtrl.asyncAssertSyncDeassertDrive`` version of to
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:227
-msgid "Special utilities"
+msgid "Logic simplification utilities"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:229
+msgid "`DecodingSpec` with `Masked` provide a minimal Boolean simplification and decode-table utility using the `Quine–McCluskey algorithm <https://en.wikipedia.org/wiki/Quine%E2%80%93McCluskey_algorithm>`_."
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:232
+msgid "Provides masked pattern matching, Quine–McCluskey style logic reduction, and a high-level decode-table builder."
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:236
+msgid "`Masked`"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:238
+msgid "Represents a bit pattern with care (significant) and don't-care bits. - `value` = bit values - `care` = which bits must match (1 = match, 0 = don't care)"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:242
+#: ../../SpinalHDL/Libraries/utils.rst:272
+msgid "Example:"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:250
+msgid "e.g RISC-V instructions:"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:257
+msgid "Used to define instruction encodings for decode tables."
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:260
+msgid "`DecodingSpec`"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:262
+msgid "High-level builder for decode tables using `Masked` patterns."
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:268
+msgid "Methods:"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:265
+msgid "`addNeeds(key : Masked, value : Masked)`"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:266
+msgid "`addNeeds(keys : Seq[Masked], value : Masked)`"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:267
+msgid "`build(sel, coverAll)`"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:268
+msgid "`setDefault(value : Masked)`"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:270
+msgid "This generate simplified decode logic."
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:281
+msgid "Generates minimized combinational decode logic."
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:283
+msgid "The practical use is to define bit patterns as `Masked` and feed them into `DecodingSpec` to build compact decode logic (e.g., RISC-V). The output hardware is then minimized (fewer LUTs / simpler gates)."
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:289
+msgid "Special utilities"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:298
 msgid "LatencyAnalysis(paths : Node*)"
 msgstr ""
 
