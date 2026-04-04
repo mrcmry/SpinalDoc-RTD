@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-04-04 17:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,58 +112,58 @@ msgstr ""
 msgid "``RamFiber`` is the integration layer of a regular tilelink Ram component."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:154
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:149
 msgid "Example CpuFiber"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:156
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:151
 msgid "``CpuFiber`` is an fictive example of a master integration."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:204
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:199
 msgid "One particularity of Tilelink, is that it assumes a master will not emit requests to a unmapped memory space. To allow a master to identify what memory access it is allowed to do, you can use the ``spinal.lib.system.tag.MemoryConnection.getMemoryTransfers`` tool as following :"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:217
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:212
 msgid "If you run this in the Cpu's fiber, in the following soc :"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:239
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:234
 msgid "You will get :"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:247
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:242
 msgid "\"through=\" specify the chain of address transformations done to reach the target."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:248
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:243
 msgid "\"SM\" means SizeMapping(address, size)"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:249
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:244
 msgid "\"OT\" means OffsetTransformer(offset)"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:251
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:246
 msgid "Note that you can also add PMA (Physical Memory Attributes) to nodes and retrieves them via this getMemoryTransfers utilities."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:253
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:248
 msgid "The currently defined PMA are :"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:269
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:264
 msgid "The getMemoryTransfers utility rely on a dedicated SpinalTag :"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:290
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:285
 msgid "That SpinalTag can be used applied to both ends of a given memory bus connection to keep this connection discoverable at elaboration time, creating a graph of MemoryConnection. One good thing about it is that is is bus agnostic, meaning it isn't tilelink specific."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:294
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:289
 msgid "Example WidthAdapter"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:296
+#: ../../SpinalHDL/Libraries/Bus/tilelink/tilelink_fabric.rst:291
 msgid "The width adapter is a simple example of bridge."
 msgstr ""
