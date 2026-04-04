@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SpinalHDL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-04 11:00+0000\n"
+"POT-Creation-Date: 2026-04-04 15:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,20 +30,20 @@ msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:16
 #: ../../SpinalHDL/Libraries/utils.rst:86
-#: ../../SpinalHDL/Libraries/utils.rst:231
+#: ../../SpinalHDL/Libraries/utils.rst:233
 msgid "Syntax"
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:17
 #: ../../SpinalHDL/Libraries/utils.rst:87
-#: ../../SpinalHDL/Libraries/utils.rst:232
+#: ../../SpinalHDL/Libraries/utils.rst:234
 msgid "Return"
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:18
 #: ../../SpinalHDL/Libraries/utils.rst:88
-#: ../../SpinalHDL/Libraries/utils.rst:204
-#: ../../SpinalHDL/Libraries/utils.rst:233
+#: ../../SpinalHDL/Libraries/utils.rst:206
+#: ../../SpinalHDL/Libraries/utils.rst:235
 msgid "Description"
 msgstr ""
 
@@ -136,7 +136,7 @@ msgid "MajorityVote(x : BitVector)"
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:41
-#: ../../SpinalHDL/Libraries/utils.rst:206
+#: ../../SpinalHDL/Libraries/utils.rst:208
 msgid "Bool"
 msgstr ""
 
@@ -311,12 +311,12 @@ msgid "The Counter tool can be used to easily instantiate a hardware counter."
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:123
-#: ../../SpinalHDL/Libraries/utils.rst:166
+#: ../../SpinalHDL/Libraries/utils.rst:168
 msgid "Instantiation syntax"
 msgstr ""
 
 #: ../../SpinalHDL/Libraries/utils.rst:124
-#: ../../SpinalHDL/Libraries/utils.rst:167
+#: ../../SpinalHDL/Libraries/utils.rst:169
 msgid "Notes"
 msgstr ""
 
@@ -348,149 +348,157 @@ msgstr ""
 msgid "Starts at zero and ends at ``(1 << bitCount) - 1``"
 msgstr ""
 
+#: ../../SpinalHDL/Libraries/utils.rst:133
+msgid "``Counter(time: TimeNumber[, inc : Bool])``"
+msgstr ""
+
 #: ../../SpinalHDL/Libraries/utils.rst:134
+msgid "Starts at zero and ends after ``time`` clocks"
+msgstr ""
+
+#: ../../SpinalHDL/Libraries/utils.rst:136
 msgid "A counter can be controlled by methods, and signals can be read:"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:150
+#: ../../SpinalHDL/Libraries/utils.rst:152
 msgid "When a ``Counter`` overflows (reached end value), it restarts the next cycle to its start value."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:153
+#: ../../SpinalHDL/Libraries/utils.rst:155
 msgid "Currently, only up counter are supported."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:155
+#: ../../SpinalHDL/Libraries/utils.rst:157
 msgid "``CounterFreeRun`` builds an always running counter: ``CounterFreeRun(stateCount: BigInt)``."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:158
+#: ../../SpinalHDL/Libraries/utils.rst:160
 msgid "Timeout"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:160
+#: ../../SpinalHDL/Libraries/utils.rst:162
 msgid "The Timeout tool can be used to easily instantiate an hardware timeout."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:168
+#: ../../SpinalHDL/Libraries/utils.rst:170
 msgid "Timeout(cycles : BigInt)"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:169
+#: ../../SpinalHDL/Libraries/utils.rst:171
 msgid "Tick after ``cycles`` clocks"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:170
+#: ../../SpinalHDL/Libraries/utils.rst:172
 msgid "Timeout(time : TimeNumber)"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:171
+#: ../../SpinalHDL/Libraries/utils.rst:173
 msgid "Tick after a ``time`` duration"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:172
+#: ../../SpinalHDL/Libraries/utils.rst:174
 msgid "Timeout(frequency : HertzNumber)"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:173
+#: ../../SpinalHDL/Libraries/utils.rst:175
 msgid "Tick at an ``frequency`` rate"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:176
+#: ../../SpinalHDL/Libraries/utils.rst:178
 msgid "There is an example of different syntaxes which could be used with the Counter tool"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:186
+#: ../../SpinalHDL/Libraries/utils.rst:188
 msgid "If you instantiate an ``Timeout`` with an time or frequency setup, the implicit ``ClockDomain`` should have an frequency setting."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:189
+#: ../../SpinalHDL/Libraries/utils.rst:191
 msgid "ResetCtrl"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:191
+#: ../../SpinalHDL/Libraries/utils.rst:193
 msgid "The ResetCtrl provide some utilities to manage resets."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:194
+#: ../../SpinalHDL/Libraries/utils.rst:196
 msgid "asyncAssertSyncDeassert"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:196
+#: ../../SpinalHDL/Libraries/utils.rst:198
 msgid "You can filter an asynchronous reset by using an asynchronously asserted synchronously deasserted logic. To do it you can use the ``ResetCtrl.asyncAssertSyncDeassert`` function which will return you the filtered value."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:202
+#: ../../SpinalHDL/Libraries/utils.rst:204
 msgid "Argument name"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:203
+#: ../../SpinalHDL/Libraries/utils.rst:205
 msgid "Type"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:205
+#: ../../SpinalHDL/Libraries/utils.rst:207
 msgid "input"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:207
+#: ../../SpinalHDL/Libraries/utils.rst:209
 msgid "Signal that should be filtered"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:208
+#: ../../SpinalHDL/Libraries/utils.rst:210
 msgid "clockDomain"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:209
+#: ../../SpinalHDL/Libraries/utils.rst:211
 msgid "ClockDomain"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:210
+#: ../../SpinalHDL/Libraries/utils.rst:212
 msgid "ClockDomain which will use the filtered value"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:211
+#: ../../SpinalHDL/Libraries/utils.rst:213
 msgid "inputPolarity"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:212
-#: ../../SpinalHDL/Libraries/utils.rst:215
+#: ../../SpinalHDL/Libraries/utils.rst:214
+#: ../../SpinalHDL/Libraries/utils.rst:217
 msgid "Polarity"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:213
+#: ../../SpinalHDL/Libraries/utils.rst:215
 msgid "HIGH/LOW (default=HIGH)"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:214
+#: ../../SpinalHDL/Libraries/utils.rst:216
 msgid "outputPolarity"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:216
+#: ../../SpinalHDL/Libraries/utils.rst:218
 msgid "HIGH/LOW (default=clockDomain.config.resetActiveLevel)"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:217
+#: ../../SpinalHDL/Libraries/utils.rst:219
 msgid "bufferDepth"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:218
-#: ../../SpinalHDL/Libraries/utils.rst:235
+#: ../../SpinalHDL/Libraries/utils.rst:220
+#: ../../SpinalHDL/Libraries/utils.rst:237
 msgid "Int"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:219
+#: ../../SpinalHDL/Libraries/utils.rst:221
 msgid "Number of register stages used to avoid metastability (default=2)"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:222
+#: ../../SpinalHDL/Libraries/utils.rst:224
 msgid "There is also an ``ResetCtrl.asyncAssertSyncDeassertDrive`` version of tool which directly assign the ``clockDomain`` reset with the filtered value."
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:225
+#: ../../SpinalHDL/Libraries/utils.rst:227
 msgid "Special utilities"
 msgstr ""
 
-#: ../../SpinalHDL/Libraries/utils.rst:234
+#: ../../SpinalHDL/Libraries/utils.rst:236
 msgid "LatencyAnalysis(paths : Node*)"
 msgstr ""
 
